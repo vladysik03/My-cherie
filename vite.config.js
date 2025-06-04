@@ -11,7 +11,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
   plugins: [pugPlugin(options, locals)],
-  base: './', // Критически важно для работы без сервера
+  base: './My Cherie', // Критически важно для работы без сервера
   build: {
     outDir: 'dist',
     assetsDir: 'assets', // Папка для ресурсов (css, images)
