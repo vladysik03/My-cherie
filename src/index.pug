@@ -1,0 +1,146 @@
+main.page-main
+    header.page-main_header.header
+        nav.header__nav.navigation
+            img.header__logo(src="LogoMini.png") 
+            ul.navigation__list.nav-list
+                a.nav-list__item(href='#About') О нас
+                a.nav-list__item(href='#Menu') Наше меню
+                a.nav-list__item(href='#Reviews') Отзывы
+                a.nav-list__item(href='#Events') Акции
+                a.nav-list__item(href='#Contacts') Контакты
+            tel.navigation__item +7 999 000 00 00
+
+            <button class=".navigation__burger burger" aria-label="Меню">
+                <span class="burger__line"></span>
+            </button>
+
+    section.page-main__promo-section.promo-section
+        img.promo-section__logo(src="LogoPromo.png") 
+
+    section.page-main__about-section.about-section 
+        h2.about-section__title.section-title(id="About") О нас
+        span.about-section__text.about-text
+            p.about-text__paragraph Добро пожаловать в Ma Cherie — место, где каждый десерт создан с любовью и вдохновением! Мы верим, что сладости должны не только радовать вкус, но и дарить эмоции.  
+
+            p.about-text__paragraph Наша команда — это мастера-кондитеры, которые превращают свежие и натуральные ингредиенты в настоящие произведения искусства. Мы создаем классические и авторские десерты, учитываем пожелания клиентов и всегда открыты к экспериментам.
+
+            p.about-text__paragraph Каждый торт, пирожное или печенье — это не просто угощение, а история, рассказанная в сладких нотах. Будь то уютный вечер с семьей, день рождения или особенный повод — мы сделаем ваш праздник еще вкуснее!  
+
+            p.about-text__slogan Загляните к нам за кусочком счастья!
+        img.about-section__img(src="AboutImg.png") 
+
+    section.page-main__menu-section.menu-section
+        h2.menu-section__title.section-title(id="Menu") Наше меню
+        ul.menu-section__menu-list.menu__list
+            li.menu-list__product-item.product-item
+                img.product-item__product-img(src="cheesecake.png") 
+                h3.product-item__product-name Чизкейк Классический
+                p.product-item__product-description Состав: Крем-чиз, песочная крошка, куриные яйца, сливочное масло, подсластитель
+                span.product-item__product-price 1000 руб/1400 грамм
+            li.menu-list__product-item.product-item
+                img.product-item__product-img(src="caramel.png") 
+                h3.product-item__product-name Чизкейк Карамельный
+                p.product-item__product-description Состав: Крем-чиз, песочная крошка, куриные яйца, сливочное масло, карамель, подсластитель
+                span.product-item__product-price 1200 руб/1400 грамм
+            li.menu-list__product-item.product-item
+                img.product-item__product-img(src="martinik.png") 
+                h3.product-item__product-name Мартиник
+                p.product-item__product-description Состав: Карамель, банан, бисквит, карамельный мусс
+                span.product-item__product-price 1400 руб/1000 грамм
+            li.menu-list__product-item.product-item
+                img.product-item__product-img(src="DonPancho.png") 
+                h3.product-item__product-name Дон Панчо
+                p.product-item__product-description Состав: Крем-чиз, шоколадный бисквит, вишня
+                span.product-item__product-price 800 руб/1400 грамм
+            li.menu-list__product-item.product-item
+                img.product-item__product-img(src="Alladin.png") 
+                h3.product-item__product-name Алладин
+                p.product-item__product-description Состав: Крем-чиз, Ванильный бисквит с маком, курага 
+                span.product-item__product-price 1000 руб/1400 грамм
+            li.menu-list__product-item.product-item
+                img.product-item__product-img(src="Carrot.png") 
+                h3.product-item__product-name Морковный торт
+                p.product-item__product-description Состав: Крем-чиз, морковный бисквит с грецким орехом и специями
+                span.product-item__product-price 1000 руб/1400 грамм
+            li.menu-list__product-item.product-item
+                img.product-item__product-img(src="Ekler.png") 
+                h3.product-item__product-name Эклеры Ассорти
+                p.product-item__product-description 
+                    | Состав: Заварное тесто, Ванильный эклер: заварной крем с ванилином
+                    | Шоколадный эклер: Заварной крем с добавлением горького шоколада
+                span.product-item__product-price 1000 руб/1400 грамм
+            li.menu-list__product-item.product-item
+                img.product-item__product-img(src="Napo.png") 
+                h3.product-item__product-name Наполеон
+                p.product-item__product-description Состав: Крем-чиз, песочная крошка, куриные яйца, сливочное масло
+                span.product-item__product-price 1000 руб/1400 грамм
+        p.menu-section__promo В нашей кондитерской вы также можете оформить торт на заказ, самостоятельно выбрать начинку, декор и упаковку
+        button.menu-section__call-button.call-button.popup-open Заказать звонок
+
+    section.page-main__review-section.review-section
+        h2.review-section__title.section-title(id="Reviews") Отзывы
+        ul.review-section__review-list.review-list
+            span.review-list__review-item
+                h3.review-item__person-name Екатерина С.
+                p.review-item__review__text Заказывала торт на день рождения дочки, и это было просто волшебство! Внешний вид — сказка, а вкус — еще лучше. Крем нежный, бисквит воздушный, все идеально сбалансировано. Спасибо за такую красоту и вкусноту!  
+            span.review-list__review-item
+                h3.review-item__person-name Марина К.
+                p.review-item__review__text Очень понравилось, что можно заказать десерт с индивидуальным оформлением. Сделали торт по моему эскизу, получилось даже лучше, чем я ожидала! Вкус потрясающий и очень насыщенно. Рекомендую!  
+            span.review-list__review-item
+                h3.review-item__person-name Антон М.
+                p.review-item__review__text Пробовал эклеры — это нечто! Чувствуется, что используются только качественные ингредиенты. Сервис на высоте, все быстро и вежливо. Это мое любимое место для сладких радостей!  
+            span.review-list__review-item
+                h3.review-item__person-name Олег Т.
+                p.review-item__review__text Купил чизкейк на пробу и пожалел… что взял только один! Теперь буду заказывать регулярно. Нежный, тающий во рту, с правильной текстурой и вкусом. Спасибо за качество и уютную атмосферу!
+
+            img.review-list__people-img(src="review.png") 
+
+    section.page-main__event-section.event-section
+        h2.event-section__title.section-title(id="Events") Акции
+        span.event-section__event-text При покупке целого торта, кусочек любого торта в подарок
+        span.event-section__event-dates  Акция действует с 01.04.2025 по 31.05.2025
+        button.event-section__button.call-button.popup-open Заказать звонок
+
+    section.page-main__contacts-section.contacts-section 
+        h2.contacts-section__title.section-title(id="Contacts") Контакты
+        div.contacts-section__main-container
+            div.contacts-section__container
+                p.contacts-section__adress Мы находимся по адресу: г. Санкт-Петербург, Загородный проспект, 56
+                p.contacts-section__tel
+                    | Наш телефон
+                    tel +7 999 000 00 00
+                form.contacts-section__contact-form.contact-form
+                    p.contact-form__text Вы можете оставить заявку, и наш оператор свяжется с вами в течение 2 минут
+                    input.contact-form__input.input__name(placeholder="Имя" type="text" name="from_name" required)
+                    input.contact-form__input.input__phone(placeholder="Номер телефона" type="tel" name="phone" required)
+                    button.contact-form__button.call-button(type="submit") Заказать звонок
+
+            div.contacts-section__container
+                img.contacts-section__map(src="maps.png") 
+                
+    
+    footer.page-main__footer.footer 
+        img.footer__logo(src="LogoMini.png")
+        nav.footer__nav.footer-nav
+            ul.footer-nav__nav-list.nav-list
+                li.nav-list__nav-item.nav-item 
+                    a.nav-item__link(href='#About') О нас
+                li.nav-list__nav-item.nav-item
+                    a.nav-item__link(href='#Reviews') Отзывы
+                li.nav-list__nav-item.nav-item 
+                    a.nav-item__link(href='#Menu') Наше меню 
+                li.nav-list__nav-item.nav-item 
+                    a.nav-item__link(href='#Events') Акции
+                li.nav-list__nav-item.nav-item
+                    a.nav-item__link(href='#Contacts') Контакты
+
+    div.popup
+        div.popup__content
+            h2.popup__title.section-title Оставить заявку
+            button.popup__close X
+            form.popup__contact-form.contact-form
+                    p.contact-form__text Вы можете оставить заявку, и наш оператор свяжется с вами в течение 2 минут
+                    input.contact-form__input.input__name(placeholder="Имя" type="text" name="from_name" required)
+                    input.contact-form__input.input__phone(placeholder="Номер телефона" type="tel" name="phone" required)
+                    button.contact-form__button.call-button(type="submit") Заказать звонок
+            
