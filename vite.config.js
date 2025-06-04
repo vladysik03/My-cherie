@@ -11,11 +11,11 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
   plugins: [pugPlugin(options, locals)],
-  base: './', // Критически важно для работы без сервера
+  base: './',
   build: {
-    outDir: 'dist',
-    assetsDir: 'assets', // Папка для ресурсов (css, images)
-    emptyOutDir: true, // Очищать папку при каждой сборке
+    outDir: 'docs',
+    assetsDir: 'assets', 
+    emptyOutDir: true,
     rollupOptions: {
       output: {
         assetFileNames: 'assets/[name]-[hash][extname]', // Формат имен файлов
