@@ -14,7 +14,7 @@ const forms = document.querySelectorAll('.contact-form');
 forms.forEach((form) => {
   form.addEventListener("submit", (e) => {
     e.preventDefault();
-    console.log('click')
+    console.log('sending form')
     emailjs.sendForm("service_n7wti98", "template_u101nb9", e.target)
       .then(() => alert("Письмо отправлено!"))
       .catch((error) => alert("Ошибка: " + error.text));
