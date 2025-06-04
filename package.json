@@ -6,8 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "predeploy": "npm run build",
-   "deploy": "gh-pages -d dist",
+    "inject-key": "node ./scripts/inject-env.js",
+    "predeploy": "npm run build && npm run inject-key",
+    "deploy": "gh-pages -d docs",
     "preview": "vite preview"
   },
   "devDependencies": {
